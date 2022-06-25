@@ -488,7 +488,8 @@ func parseStateChangeEvent(chain *EventChain, event cbtevent1) (Event, error) {
 	default:
 		// TODO: generic format for unhandled cbtstatechange events
 		spew.Dump(event)
-		panic("TODO")
+		print("TODO")
+		return nil, nil
 	}
 }
 
@@ -529,7 +530,8 @@ func parseActivationEvent(chain *EventChain, event cbtevent1) (Event, error) {
 		}, nil
 	default:
 		spew.Dump(event)
-		panic("TODO")
+		print("TODO")
+		return nil, nil
 	}
 }
 
@@ -557,7 +559,7 @@ func parseBuffRemoveEvent(chain *EventChain, event cbtevent1) (Event, error) {
 		e.All = false
 	default:
 		spew.Dump(event)
-		panic("TODO")
+		print("TODO")
 	}
 
 	return e, nil
@@ -626,7 +628,7 @@ func parseDirectDamageEvent(chain *EventChain, event cbtevent1) (Event, error) {
 		e.BecameDowned = true
 	default:
 		spew.Dump(event)
-		panic("TODO")
+		print("TODO")
 	}
 
 	return e, nil
