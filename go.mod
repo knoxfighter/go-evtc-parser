@@ -1,4 +1,4 @@
-module github.com/knoxfighter/evtc
+module github.com/knoxfighter/go-evtc-parser
 
 go 1.12
 
