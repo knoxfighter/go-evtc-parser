@@ -1,4 +1,4 @@
-module github.com/BenLubar/evtc
+module github.com/knoxfighter/evtc
 
 go 1.12
 
